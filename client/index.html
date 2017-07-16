@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>WebControl panel</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
+		<script type="text/javascript" src="handle.js"></script>
+	</head>
+
+	<body>
+
+		<div class="center">
+
+			<h1>Go to url</h1>
+			<input type="text" id="url"> <input type="button" id="goto" value="Browse">
+
+			<h1>Screenshot</h1>
+			<input type="button" id="take" value="Take Screenshot">
+			<img src="" alt="Screenshot" id="screenshot">
+
+			<script type="text/javascript">
+				var browse_butt = document.getElementById('goto'), take_butt = document.getElementById('take');
+				var url = document.getElementById('url'), screenshot = document.getElementById('screenshot');
+
+				window.onload = function()
+				{
+					browse_butt.onclick = function(){handleBrowse(url.value)};
+					take_butt.onclick = function(){handleScreen()};
+				}
+
+			</script>
+		</div>		
+
+	</body>
+
+</html>
