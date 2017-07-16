@@ -1,0 +1,17 @@
+{
+  "name": "webcontrol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Filip Janko",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "selenium-webdriver": "^3.4.0",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {}
+}
